@@ -12,8 +12,6 @@
 		18E632CD22B158E200E635FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E632CB22B158E200E635FF /* Main.storyboard */; };
 		18E632CF22B158E400E635FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E632CE22B158E400E635FF /* Assets.xcassets */; };
 		18E632D222B158E400E635FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E632D022B158E400E635FF /* LaunchScreen.storyboard */; };
-		18E632DC22B2D78D00E635FF /* SAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E632DB22B2D78D00E635FF /* SAButton.swift */; };
-		18E632DE22B2E1B500E635FF /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E632DD22B2E1B500E635FF /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +22,6 @@
 		18E632CE22B158E400E635FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18E632D122B158E400E635FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18E632D322B158E400E635FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18E632DB22B2D78D00E635FF /* SAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAButton.swift; sourceTree = "<group>"; };
-		18E632DD22B2E1B500E635FF /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				18E632C722B158E200E635FF /* AppDelegate.swift */,
-				18E632DB22B2D78D00E635FF /* SAButton.swift */,
-				18E632DD22B2E1B500E635FF /* TableViewController.swift */,
 				18E632C922B158E200E635FF /* ViewController.swift */,
 				18E632CB22B158E200E635FF /* Main.storyboard */,
 				18E632CE22B158E400E635FF /* Assets.xcassets */,
@@ -96,6 +90,9 @@
 		18E632BC22B158E200E635FF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					www.gmail.com,
+				);
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Apple;
@@ -142,9 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18E632CA22B158E200E635FF /* ViewController.swift in Sources */,
-				18E632DC22B2D78D00E635FF /* SAButton.swift in Sources */,
 				18E632C822B158E200E635FF /* AppDelegate.swift in Sources */,
-				18E632DE22B2E1B500E635FF /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +286,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GLTK5RG7VK;
+				DEVELOPMENT_TEAM = JQ35T4NY99;
 				INFOPLIST_FILE = ClimateCare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,7 +304,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GLTK5RG7VK;
+				DEVELOPMENT_TEAM = JQ35T4NY99;
 				INFOPLIST_FILE = ClimateCare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
