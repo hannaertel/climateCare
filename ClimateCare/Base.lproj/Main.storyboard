@@ -69,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="297.10144927536237" y="59.598214285714285"/>
         </scene>
-        <!--Table View Controller-->
+        <!--View Controller-->
         <scene sceneID="SBF-xL-Bfg">
             <objects>
-                <tableViewController id="QdE-3i-cM6" sceneMemberID="viewController">
+                <tableViewController id="QdE-3i-cM6" customClass="ViewController" customModule="ClimateCare" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="W2V-AT-Zv8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -144,7 +144,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="390.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="More information about palm oil and deforestation" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ttS-T1-oF8">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="More information about deforestation" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ttS-T1-oF8">
                                                     <rect key="frame" x="8" y="8" width="389" height="83"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -152,19 +152,38 @@
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     <dataDetectorType key="dataDetectorTypes" link="YES"/>
                                                 </textView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z17-7w-PUN">
-                                                    <rect key="frame" x="143" y="72" width="118" height="51"/>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z17-7w-PUN" customClass="SAButton" customModule="ClimateCare" customModuleProvider="target">
+                                                    <rect key="frame" x="143" y="55" width="118" height="51"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.25247147679328918" green="0.55824035406112671" blue="0.12995931506156921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <accessibility key="accessibilityConfiguration">
-                                                        <accessibilityTraits key="traits" button="YES" link="YES"/>
-                                                    </accessibility>
                                                     <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="32"/>
-                                                    <state key="normal" title="here!">
+                                                    <state key="normal" title="here">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <connections>
+                                                        <action selector="button1Tapped:" destination="4Kb-lE-88G" eventType="touchUpInside" id="D9i-la-Zz8"/>
+                                                        <action selector="button1Tapped:" destination="QdE-3i-cM6" eventType="touchUpInside" id="FLm-Aq-vyR"/>
                                                         <action selector="button1WasPressed:" destination="4Kb-lE-88G" eventType="touchUpInside" id="qMJ-aW-rPc"/>
+                                                        <action selector="watchButtonTapped:" destination="4Kb-lE-88G" eventType="touchUpInside" id="gTd-pQ-PKI"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="More information about palm oil and deforestation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6h-I2-IS3">
+                                                    <rect key="frame" x="32" y="114" width="350" height="56"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNY-bQ-OKW">
+                                                    <rect key="frame" x="148" y="205" width="119" height="39"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.25247147679328918" green="0.55824035406112671" blue="0.12995931506156921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="35"/>
+                                                    <state key="normal" title="here">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="button2Tapped:" destination="QdE-3i-cM6" eventType="touchUpInside" id="xEh-oI-5dz"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
