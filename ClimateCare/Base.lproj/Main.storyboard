@@ -175,7 +175,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNY-bQ-OKW">
-                                                    <rect key="frame" x="148" y="205" width="119" height="39"/>
+                                                    <rect key="frame" x="148" y="178" width="119" height="39"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.25247147679328918" green="0.55824035406112671" blue="0.12995931506156921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="35"/>
@@ -186,6 +186,10 @@
                                                         <action selector="button2Tapped:" destination="QdE-3i-cM6" eventType="touchUpInside" id="xEh-oI-5dz"/>
                                                     </connections>
                                                 </button>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="forest before and after" translatesAutoresizingMaskIntoConstraints="NO" id="Htt-wl-Qr1">
+                                                    <rect key="frame" x="8" y="225" width="389" height="157"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -206,5 +210,6 @@
     </scenes>
     <resources>
         <image name="deforestation1" width="850" height="500"/>
+        <image name="forest before and after" width="485" height="273"/>
     </resources>
 </document>
